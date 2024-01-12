@@ -74,8 +74,19 @@
     position: absolute;
     top: 0;
     left: 0;
-    transform: translate(-10px);
-    transition: transform 5s ease-in-out;
+    overflow: hidden;
+    animation: cloudEffect 3s ease-in-out 1s infinite alternate;
+  }
+  @keyframes cloudEffect{
+    0%{
+      transform: translate(0px);
+    }
+    50%{
+      transform: translate(-2px);
+    }
+    100%{
+      transform: translate(-5px);
+    }
   }
   .travel .text {
     position: absolute;
@@ -238,10 +249,21 @@
   }
   .travel .cloud {
     position: absolute;
-    top: 0;
+    top: -0.3%;
     left: 0;
-    transform: translate(-10px);
-    transition: transform 5s ease-in-out;
+    overflow: hidden;
+    animation: cloudEffect 3s ease-in-out 1s infinite alternate;
+  }
+  @keyframes cloudEffect{
+    0%{
+      transform: translate(0px);
+    }
+    50%{
+      transform: translate(-2px);
+    }
+    100%{
+      transform: translate(-5px);
+    }
   }
   .travel .text {
     position: absolute;
