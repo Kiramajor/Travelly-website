@@ -75,7 +75,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    animation: cloudEffect 3s ease-in-out 1s infinite alternate;
+    animation: cloudEffect 5s ease-in-out 1s infinite alternate;
   }
   @keyframes cloudEffect{
     0%{
@@ -187,6 +187,8 @@
     color: white;
   }
 }
+
+
 @media screen and (min-width: 426px) {
   header {
     background-color: navy;
@@ -252,17 +254,17 @@
     top: -0.3%;
     left: 0;
     overflow: hidden;
-    animation: cloudEffect 3s ease-in-out 1s infinite alternate;
+    animation: cloudEffect 5s ease-in-out infinite alternate;
   }
   @keyframes cloudEffect{
     0%{
-      transform: translate(0px);
+      transform: translate(-3px);
     }
     50%{
-      transform: translate(-2px);
+      transform: translate(-5px);
     }
     100%{
-      transform: translate(-5px);
+      transform: translate(-10px);
     }
   }
   .travel .text {
